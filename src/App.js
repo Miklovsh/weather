@@ -71,6 +71,10 @@ function App() {
               {data.sys ? <p className="details__indicator">{new Date(data.sys.sunset * 1000).toLocaleTimeString('ua-IN')}</p> : null}
             </div>
           </aside>
+          <div className='main__developer  main__developer-mobile'>
+            <p className='main__developer-label'>Розробник - </p>
+            <a className='main__developer-name' href="https://www.linkedin.com/in/viktor-miklovsh-aa61b9205/" target="_blank">Мікловш Віктор</a>
+          </div>
         </div>
       </div>
     </div>

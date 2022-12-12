@@ -115,6 +115,10 @@
   margin-bottom: 10px;
 }
 
+.main__developer-mobile {
+  display: none;
+}
+
 .main__developer-label {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -170,4 +174,151 @@
   font-size: 22px;
   line-height: 26px;
   color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .main {
+    max-width: 100%;
+    min-height: auto;
+    justify-content: center;
+    margin-right: 0px;
+  }
+
+  .main__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 40px;
+  }
+
+  .main__search {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .main__search-input {
+    font-size: 32px;
+    line-height: 36px;
+
+  }
+
+  .main__search-input::placeholder {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .main__search-btn {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 25px;
+    padding: 5px 25px;
+  }
+
+  .main__developer {
+    display: none;
+  }
+
+  .main__developer-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .main__developer-label,
+  .main__developer-name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .details {
+    width: 530px;
+    min-height: auto;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .details__title {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 15px;
+  }
+
+  .details__info,
+  .details__indicator {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .main__error {
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__title {
+    font-size: 30px;
+    line-height: 34px;
+    margin-top: 30px;
+  }
+
+  .main__search {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .main__search-input {
+    font-size: 28px;
+    line-height: 32px;
+    width: 100%;
+  }
+
+  .main__search-input::placeholder {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .main__search-btn {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+    padding: 5px 20px;
+  }
+
+  .main__error {
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 20px;
+  }
+
+  .details {
+    max-width: 100%;
+  }
+
+  .details__title {
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 10px;
+  }
+
+  .details__info,
+  .details__indicator {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
