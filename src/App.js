@@ -4,12 +4,14 @@ import axios from 'axios';
 
 function App() {
 
-  const [data, setData] = useState({});
-  const [location, setLocation] = useState('');
-  const [error, setError] = useState('');
+  const [data, setData] = useState({}); //Стейт для отриманого результату при get запиту
+  const [location, setLocation] = useState(''); //Стейт для міста
+  const [error, setError] = useState(''); // Стейт для опрацювання помилки при невдалому get запиту
 
+  // Зміна зберігає посилання на API з якого за допомогою get запросу отримую дані про погоду. В location підставляється значення яке ввели в інпуті з класом "main__search-input" 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=c843569ad23fdc5c81afc253dbd52740&lang=ua`;
 
+  //Функція search спрацьовує якщо відбувся клік по кнопці пошук, далі виконує get запит, і якщо get запит пройшов успішно, то результат записує в стейт data. Якщо виникла помилка, то в стейт Error записується повідомлення яке виведеться для користувача
   const search = (event) => {
     if (event) {
       axios.get(url).then((response) => {
